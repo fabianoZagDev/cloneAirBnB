@@ -90,14 +90,13 @@ header {
     font-size: 0.875rem;
     justify-content: center;
     padding: 10px 80px 10px 80px;
-    max-width: 1280px;
+    max-width: 1200px;
     height: 3.7rem;
 }
 .account-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    flex: 1 0 140px;
     margin-left: 2.2rem
 }
 .seu-espaco-container {
@@ -145,4 +144,206 @@ header {
 }
 .bold {
     font-weight: 700;
+}
+.max-width-center {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.home-photos-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-photos-header h1 {
+    display: flex;
+    gap: 10px;
+}
+.home-photos-header h1 img{
+    width: 24px;
+    height: 24px;
+}
+.midia-container{
+    display: flex;
+    gap: 20px;
+}
+.midia-container div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+.midia-container div img{
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.midia-container div a{
+    color: #000;
+    text-decoration: underline;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: normal;
+}
+.presentation-container{
+    padding-top: 24px !important;
+}
+
+.photos-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 8px;
+    width: 1200px;
+    padding-top: 24px
+}
+    
+.photo-1 { 
+    grid-area: 1 / 1 / 3 / 3;
+}
+.photo-1 img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: 1px solid transparent;
+}
+.photo-2 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    width: 272px;
+    height: 272px;
+}
+.photo-3 { 
+    grid-area: 2 / 3 / 3 / 4; 
+    width: 272px;
+    height: 272px;}
+.photo-4 { 
+    grid-area: 2 / 4 / 3 / 5; 
+    width: 272px;
+    height: 272px;
+}
+.photo-4 img {
+    border-bottom-right-radius: 12px;
+}
+.photo-5 { 
+    grid-area: 1 / 4 / 2 / 5; 
+    width: 272px;
+    height: 272px;
+}
+
+.photo-5 img {
+    border-top-right-radius: 12px;
+}
+
+.photos-container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-w-button button{
+    position: absolute !important;
+    z-index: 3 !important;
+    top: 41.6rem;
+    right: 360px !important;
+    padding: 4px 8px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid black;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.container-w-button button img{
+    width: 16px;
+    height: 16px;
+}
+.container-local {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-local h2 {
+    font-size: 1.5rem
+}
+.container-local ol {
+    list-style: none;
+    display: flex;
+    font-size: 1.1rem;
+}
+.avaliacoes-container {
+    display: flex;
+    width: 230px;
+    gap: 12px;
+    align-items: center;
+    font-size: 1.050rem;
+    font-weight: 700;
+}
+.avaliacoes-container img{
+    width: 16px;
+    height: 16px
+}
+.underline {
+    text-decoration: underline
+}
+.sessenta-por-cento {
+    width: 58%;
+}
+.quarenta-por-cento {
+    padding-top: 32px;
+}
+.pedido-container {
+    padding: 24px 24px 120px 24px;
+    width: 322px;
+    height: 32px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    gap: 30px;
+    text-align: center;
+}
+.pedido-container h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+    padding: 10px 0 6px;;
+    font-size: 1.325rem;
+}
+.pedido-container button{
+    background-color: #B0B0B0;
+    margin: 0 auto;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+.separator {
+    display: flex;
+    justify-content: space-between;
+}
+.container-proprietario {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.foto-proprietario {
+    height: 40px;
+    width: 40px;
+}
+.foto-proprietario img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1367px){
+    .container-w-button button{
+        right: 7rem !important;
+    }
 }
