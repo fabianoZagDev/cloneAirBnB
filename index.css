@@ -342,12 +342,6 @@ header {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 1367px){
-    .container-w-button button{
-        right: 7rem !important;
-    }
-    font-family: Nunito;
-}
 h1{
     font-size: 1.5em;
 }
@@ -358,10 +352,7 @@ body{
     justify-content: center;
     color: #222;
 }
-main{
-    width: 1100px;
-    margin: 0 auto;;
-}
+
 .caixaInfo{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -607,4 +598,10 @@ main{
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1367px){
+    .container-w-button button{
+        right: 7rem !important;
+    }
 }
