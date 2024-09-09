@@ -346,4 +346,265 @@ header {
     .container-w-button button{
         right: 7rem !important;
     }
+    font-family: Nunito;
+}
+h1{
+    font-size: 1.5em;
+}
+body{
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222;
+}
+main{
+    width: 1100px;
+    margin: 0 auto;;
+}
+.caixaInfo{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.topicos {
+    display: grid;
+    grid-template-rows: repeat(4, auto); /* 4 linhas automáticas */
+    gap: 24px;
+    justify-items: start; /* Alinha o conteúdo ao início */
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid rgb(221,221, 221);    
+}
+.topico {   
+    display: grid;
+    grid-template-columns: 40px 1fr; /* Coluna menor para o ícone, maior para o texto */
+    gap: 16px;
+    align-items: start; /* Alinha o ícone e texto verticalmente */
+    justify-items: start; /* Alinha o ícone e texto ao início */
+}
+.topico p {
+    margin: 0; /* Remove margens adicionais do texto */
+}
+.first{
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.descricao{
+    padding-top: 32px;
+    padding-bottom: 32px;    
+    border-top: 1px solid rgb(221,221, 221);    
+    font-size: 1rem;
+}
+.translate{
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.info-recep{
+    padding-top: 48px;
+    padding-bottom: 32px;
+    border-top: 1px solid rgb(221,221, 221);
+}
+.titulo{
+    margin-bottom: 24px;
+}
+.fotoperfil svg{
+    padding: 7.5px;
+    background: rgb(156,53,91);
+    background: linear-gradient(135deg, rgb(214, 14, 88) 0%, rgba(249,13,65,1) 33%, rgba(220,16,16,1) 95%);
+    border-radius: 15px;
+    position: absolute;
+    top:70px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);;
+    left: 75px;
+}
+.fotoperfil{
+    position: relative;
+}
+.fotoperfil img{
+    width: 104px;
+    border-radius: 50%;
+}
+.part{
+    flex-direction: column;
+}
+.perfil h1{
+    text-align: center;
+    display: inline-block;
+}
+.perfil{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.pt1{
+    padding-top: 10px;   
+    padding-bottom: 10px; 
+}
+.pt2{
+    border-top: 1px solid rgb(221,221, 221);
+    padding-top: 10px;   
+    padding-bottom: 10px;
+}
+.pt3{
+    border-top: 1px solid rgb(221,221, 221);   
+    padding-top: 10px;   
+    padding-bottom: 10px;
+}
+.part p{
+    font-size: 0.65rem;
+}
+.card{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 220px 96px;
+    gap: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+.nome {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nome h1 {
+    margin: 0;
+    width: 150px;
+    padding: 0;
+}
+
+.nome p {
+    margin: 0; 
+    padding: 0;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.topicos-recep{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.top svg{
+    width: 24px;
+}
+.top p{
+    font-size: 17px;
+}
+.text-recep p{
+    font-size: 17px;
+}
+.comodos{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid rgb(221,221, 221);
+}
+.comodo-lista{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.comodo{
+    display: flex;
+    flex-direction: column;
+}
+.comodo img{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.comentarios{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid rgb(221,221, 221);
+}
+.infogeral{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.infogeral p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.morebutton p{
+    margin-top: 30px;
+    width: 250px;
+    padding: 13px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.comentario .perfilcom{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+.comentario .infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    gap: 3px;
+}
+.comentario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20%;
+}
+.avaliacao{
+    display: flex;
+    flex-direction: row;
+}
+.perfilcom img{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+}
+.perfilcom {
+    justify-content: left;
+}
+.nomecom{
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+}
+.nomeloc p{
+    text-align: left;
+}
+.more{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+.mensagem{
+    font-size: 1.0rem;
+}
+.comentario-table{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
