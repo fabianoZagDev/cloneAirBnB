@@ -835,16 +835,22 @@ footer {
 .paragraph-mobile{
     display: none;
 }
+.opcoes-mobile{
+    display: none;
+}
 
 @media only screen and (max-width: 450px) {
     main{
         width: 100%;
     }
+
     .foto-mobile img{
         width: 100%;
     }
     .foto-mobile{
         position: relative;
+        margin-bottom: 10px;
+        width: 414px;
     }
     .header-desktop {
         display: none; /* Some com o header do desktop no mobile */
@@ -936,5 +942,74 @@ footer {
     .separator-faq{
         display: flex;
         flex-direction: column;
+        font-size: 120%;
     }
+    .separator-faq h3{
+        font-size: 160%;
+    }
+    .comentario .infos .avaliacao{
+        align-items: center;
+    }
+    .comentario .infos{
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+    }
+    .comentario{
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+    }
+    .comentarios-mobile{
+        margin: 20px 0;
+    }
+    .faq h1{
+        display: none;
+    }
+    .contatos{
+        flex-direction: column;
+        gap: 10px; 
+    }
+    .opcoes-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    .explore .opcoes-desktop{
+        display: none;
+    }
+    .presentation-container{
+        padding-top: 0;
+    }
+    main{
+        width: 90%;
+        justify-items: center;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .sessenta-por-cento{
+        width: 100%;;
+    }
+    .container-local{
+        padding-top: 0;
+        font-size: 1.0rem;
+        justify-content: start;
+    }
+    .container-local h1{
+        font-size: 80%;
+    }
+    .container-local ol{
+        font-size: 80%;
+    }
+    *{
+        max-width: 100%;
+    }
+    
 }
