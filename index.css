@@ -189,7 +189,7 @@ body{
     letter-spacing: normal;
 }
 .presentation-container{
-    padding-top: 24px !important;
+    padding-top: 24px;
 }
 
 .photos-container {
@@ -730,6 +730,9 @@ body{
     gap: 10rem;
     padding-bottom: 48px;
 }
+.foto-mobile{
+    display: none;
+}
 .explore {
     padding-top:32px;
 }
@@ -829,13 +832,109 @@ footer {
     width: 18px;
     cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
+.paragraph-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    main{
+        width: 100%;
+    }
+    .foto-mobile img{
+        width: 100%;
+    }
+    .foto-mobile{
+        position: relative;
+    }
     .header-desktop {
         display: none; /* Some com o header do desktop no mobile */
     }
-
     .header-mobile {
+        display: flex; /* Mostra o novo header no mobile */
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        height: 50px;
+    }
+    .header-mobile div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .container-w-button{
+        display: none;
+    }
+    .quarenta-por-cento{
+        display: none;
+    }
+    .midia-container{
+        display: none;
+    }
+    .foto-mobile{
+        display: flex;
+        width: 100%;
+    }
+    .part2{
+        display: none;
+    }
+    .caixaInfo{
+        display: flex;
+    }
+    .localmap iframe{
+
+        width: 90%;
+        height: 213px;
+    }
+    .paginas{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.65);
+        padding: 2px 5px;
+        right: 10px;
+        bottom: 10px;
+        color: white;
+        border-radius: 2px;
+    }
+    .iconicos img{
+        width: 100%;
+        height: auto;
+    }
+    .iconicos p{
+        width: 80%;
+    }
+    .processo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         
-        display: block; /* Mostra o novo header no mobile */
+    }
+    .processo-container .processo{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    .processo .text-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .comentarios{
+        display: none;
+    }
+    .card{
+        width: auto;
+    }
+    .paragraph{
+        display: none;
+    }
+    .paragraph-mobile{
+        display: block;
+    }
+    .separator-faq{
+        display: flex;
+        flex-direction: column;
     }
 }
