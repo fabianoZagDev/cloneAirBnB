@@ -839,11 +839,20 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 720px) {
     main{
         width: 100%;
     }
-
+    .outras-opcoes{
+        width: 90%;
+    }
+    footer{
+        justify-content: center;
+    }
+    .explore{
+        justify-content: center;
+        width: 90%;
+    }
     .foto-mobile img{
         width: 100%;
     }
@@ -851,6 +860,13 @@ footer {
         position: relative;
         margin-bottom: 10px;
         width: 414px;
+    }
+    .configuracoes-container{
+        justify-content: center;
+    }
+    .social .max-width-center{
+        width: 90%;
+        margin-bottom: 20px;
     }
     .header-desktop {
         display: none; /* Some com o header do desktop no mobile */
@@ -905,6 +921,11 @@ footer {
         width: 100%;
         height: auto;
     }
+    .info{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
     .iconicos p{
         width: 80%;
     }
@@ -958,6 +979,7 @@ footer {
     .comentario{
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         padding: 15px;
+        margin-right: 0;
     }
     .comentarios-mobile{
         margin: 20px 0;
@@ -1011,5 +1033,8 @@ footer {
     *{
         max-width: 100%;
     }
-    
+    .footer-navigation{
+        width: 90%;
+    }
+    .
 }
